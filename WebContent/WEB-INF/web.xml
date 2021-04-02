@@ -4,6 +4,7 @@
   <welcome-file-list>
     <welcome-file>menu_administracao.html</welcome-file>
   </welcome-file-list>
+  
   <servlet>
     <servlet-name>servletUsuarioInserir</servlet-name>
     <servlet-class>servlet.inserirUsuario</servlet-class>
@@ -12,4 +13,35 @@
     <servlet-name>servletUsuarioInserir</servlet-name>
     <url-pattern>/inserirUsuario</url-pattern>
   </servlet-mapping>
+  
+  
+  <servlet>
+    <servlet-name>servletUsuarioPesquisar</servlet-name>
+    <servlet-class>servlet.pesquisarUsuario</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>servletUsuarioPesquisar</servlet-name>
+    <url-pattern>/pesquisarUsuario</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>servletUsuarioAlterar</servlet-name>
+    <servlet-class>servlet.atualizarUsuario</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>servletUsuarioAlterar</servlet-name>
+    <url-pattern>/atualizarUsuario</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>servletUsuarioExcluir</servlet-name>
+    <servlet-class>servlet.excluirUsuario</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>servletUsuarioExcluir</servlet-name>
+    <url-pattern>/excluirUsuario</url-pattern>
+  </servlet-mapping>
+  
+  
+  
 </web-app>
